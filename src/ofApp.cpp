@@ -37,10 +37,12 @@ void ofApp::setup(){
 	ofxMaxiSettings::setup(sampleRate, 2, bufferSize);
 
 	// the following line sets up the default audio input as the audio source...
-	//ofSoundStreamSetup(2, 2, this, sampleRate, bufferSize, 4);	/* Call this last ! */
+	ofSoundStreamSetup(2, 2, this, sampleRate, bufferSize, 4);	/* Call this last ! */
 
 	// ...alternatively, the following lines set up a specific Microsoft DIrect Sound input as the audio source - 
 	//		this is obviously platform specific, so commented out from here...
+	
+	/*
 	ofSoundStream soundStream;
 	ofSoundStreamSettings settings;
 	settings.numOutputChannels = 2;
@@ -55,7 +57,8 @@ void ofApp::setup(){
 	auto devices = soundStream.getDeviceList(ofSoundDevice::Api::MS_DS);
 	settings.setInDevice(devices[0]);
 
-	ofSoundStreamSetup(settings);
+	ofSoundStreamSetup(settings); */
+	
 	// ...to here
 
 	//GUI STUFF
