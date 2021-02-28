@@ -2,15 +2,15 @@
 
 url: https://github.com/calebprice/SoundPositioner/
 
-This app serves as an input to Wekinator and, as such provides a number of extracted features. The features are extracted from a stereo audio input with the intention that they could, in conjunction with appropriate Wekinator configuration and adequate training, form a machine learning system which is able to resolve the spacial location of a sound source. The envisaged system requires the use of a stereo microphone, or pair of mono microphones spaced apart appropriately.
+This app serves as an input to Wekinator and, as such provides a number of extracted features. The features are extracted from a stereo audio input with the intention that they could, in conjunction with appropriate Wekinator configuration and adequate training, form a machine learning system which is able to resolve the spatial location of a sound source. The envisaged system requires the use of a stereo microphone, or pair of mono microphones spaced apart appropriately.
 
 SoundPositioner is an adaptation of an existing audio input example app for Wekinator 'VariousAudioInputs'.
 
 The extracted features are:
 
 1. Peak Frequency (Hz) - the frequency of the most prominent spectral component
-2. Left channel power at peak frequency (dB) - relative to some arabitrary reference
-3. Right channel powe at peak frequency (dB) - relative to some arabitrary reference
+2. Left channel power at peak frequency (dB) - relative to some arbitrary reference
+3. Right channel powe at peak frequency (dB) - relative to some arbitrary reference
 4. L/R power ratio at peak frequency (dB)
 5. L-R phase difference at peak frequency (degrees)
 6. Time difference at peak frequency (ms) - obtained by dividing phase difference by peak frequency
@@ -35,4 +35,4 @@ Just double-click on the executable and the SoundPositioner GUI should pop-up.  
 
 The app should receive audio data from your machine's default audio input device.   To change this to a specific device may require modification to the code specific to your machine and available devices.   Please see the comments within the setup procedure for some (limited) guidance here.
 
-The GUI should display graphical representations of the FFT outputs of the left and right audio channels, below which should be displayed instantanious values of the extracted features.
+The GUI should display graphical representations of the FFT outputs of the left and right audio channels, below which should be displayed instantaneous values of the extracted features.
